@@ -40,6 +40,13 @@ const Navbar = () => {
           <li className="py-1">CONTACT</li>
           <hr className="border-none outline-none h-0.5 bg-[#336ecc] w-3/5 m-auto hidden" />
         </NavLink>
+        <NavLink
+          to="https://docbook-admin-kappa.vercel.app"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <li className="py-1 text-blue-600 hover:underline">ADMIN PANEL</li>
+        </NavLink>
       </ul>
 
       <div className="flex items-center gap-4 ">
@@ -118,6 +125,16 @@ const Navbar = () => {
             <NavLink onClick={() => setShowMenu(false)} to="/contact">
               <p className="px-4 py-2 rounded full inline-block">CONTACT</p>
             </NavLink>
+            <a
+              href="https://docbook-admin-kappa.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setShowMenu(false)}
+            >
+              <p className="px-4 py-2 rounded full inline-block text-blue-600 hover:underline">
+                ADMIN PANEL
+              </p>
+            </a>
           </ul>
         </div>
       </div>
